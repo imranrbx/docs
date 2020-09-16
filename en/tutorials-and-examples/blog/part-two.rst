@@ -109,7 +109,7 @@ access that at www.example.com/articles/foobar.
 The single instruction in the action uses ``set()`` to pass resultset
 from the controller to the view (which we'll create next). The ``find()`` method 
 of the ``ArticlesTable`` object returns an instance of ``Cake\\ORM\\Query`` and
-calling the query's ``all()`` instance returns as instance of ``Cake\Datasource\\ResultSetInterface``
+calling its ``all()`` method returns as instance of ``Cake\\Collection\\CollectionInterface``
 which is set as a view variable called 'articles'.
 
 .. note::
